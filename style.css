@@ -1,11 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&family=Inter&display=swap');
 body {
   font-family: sans-serif;
   background: lightgray;
 }
 
+h1{
+  font-family: 'Homenaje', sans-serif;
+}
 h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+section {
   break-before: page;
 }
+
+.full {
+  position:absolute;
+  width: 5.25in;
+  height: 8.5in;
+  top: -0.25in;
+  left: -0.25in;
+}
+
+#p2 .p2_main_image{
+  position:absolute;
+  width:5.25in;
+  top:0.75in;
+  left: -0.25in;
+}
+
+
+#p2 .p2_text {
+  position: absolute;
+  bottom: 0.25in;
+  font-size: 2em;
+  letter-spacing: 10px;
+}
+
+#p3 .p3_main_image{
+  position:absolute;
+  width:5.25in;
+  top:0.75in;
+  left: -0.25in;
+}
+
+#p3 .p3_sub_image{
+  position:absolute;
+  width:5.5in;
+  bottom:0.7in;
+  left: -0.25in;
+}
+/* #p4 .full{
+  opacity: 0.8;
+} */
+
+#p4 .p4_text{
+  position: absolute;
+  color: white;
+  text-align: end;
+  bottom: 0.5in;
+  
+}
+
+/* #p4 .p4_text p{
+  text-align: justify;
+} */
+
+#p5 .p5_text{
+  position: absolute;
+  color: white;
+  text-align: start;
+  bottom: 0.5in;
+  
+}
+
+/* #p5 .p5_text p{
+  text-align: justify;
+} */
+
+#p6 .p6_mainimage{
+  /* max-width: 100%; */
+  position:absolute;
+  display: block;
+  margin-top: 47%;
+  width:5.35in;
+  left: -0.26in;
+  
+}
+
+#p7 .p7_mainimage{
+  /* max-width: 100%; */
+  position:absolute;
+  display: block;
+  margin-top: 47%;
+  width:5.35in;
+  left:-0.3in;
+  
+  
+}
+
+#p8 .p8_text{
+  width: 55%;
+  font-size: 12px;
+  margin-top: 0.25in;
+  margin-left: 0.25in;
+  text-align: justify;
+
+}
+
+#p9 .p9_mainimage{
+  position:absolute;
+  width:45%;
+  right:0.25in;
+  margin-top: 0.25in;
+}
+
+#p9 .p9_text{
+  position:absolute;
+  width: 64%;
+  font-size: 12px;
+  margin-top: 4.1in;
+  margin-left: 0.25in;
+  text-align: justify;
+
+}
+
+#p10 .p10_text{
+  position:absolute;
+  width: 70%;
+  font-size: 12px;
+  margin-top: 2.5in;
+  margin-left: 0.25in;
+  text-align: justify;
+
+}
+
+#p11 .p11_text{
+  position:absolute;
+  width: 67%;
+  font-size: 12px;
+  margin-left: 70px;
+  margin-top: 45px;
+  text-align: justify;
+}
+
+#p11 .p11_subtext{
+  position:absolute;
+  font-size: 9px;
+  top:1.3in;
+  right: -1.3in;
+  rotate:-90deg;
+}
+
+#p12 .p12_mainimage{
+  /* max-width: 100%; */
+  position:absolute;
+  display: block;
+  margin-top: 47%;
+  width:5.35in;
+  left: -0.35in;
+   
+}
+
+#p13 .p13_mainimage{
+  position: absolute;
+  width:3in;
+  top:0.6in;
+  right: 0.8in;
+
+}
+
+#p13 .p13_text{
+  position: absolute;
+  text-align: justify;
+  width: 67%;
+  font-size: 12px;
+  right: 0.7in;
+  bottom: 0.5in;
+}
+
 
 @media print {
   body {
@@ -14,15 +193,14 @@ h2 {
 }
 
 @page {
-  size: 5in 8in;
-  margin-top: 0.25in;
-  margin-bottom: 0.5in;
+  size: 4.75in 8in;
+  margin: 0;
+  bleed: 0.25in;
+  marks: crop;
 }
 @page:left {
-  margin-left: 0.25in;
-  margin-right: 1in;
+  
 }
 @page:right {
-  margin-left: 1in;
-  margin-right: 0.25in;
+
 }
